@@ -1,5 +1,102 @@
 @import "~bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/lie-to-me');
 
-h1 {
-    color: blue;
+body {
+    background-color: #221E1E;
+    font-family: 'Montserrat', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    position: relative;
+    z-index: 3;
+
+    a {
+        padding: 0 32px;
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+    }
+
+    img {
+        padding: 16px 0;
+        max-width: 130px;
+    }
+}
+
+main {
+    div.jumbotron {
+        background-image: url('https://brashbrownie.com/wp-content/uploads/2023/04/cashew-chocolate-brownies-in-calicut.webp');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 1000px;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        div.title {
+            color: white;
+
+            h1 {
+                color: #FFFFFFB8;
+                font-size: 55px;
+                font-weight: 700;
+                margin: 0;
+            }
+
+            h2 {
+
+                font-family: 'Lie To Me', sans-serif;
+                text-align: center;
+                font-size: 48px;
+                font-weight: 300;
+                margin: -14% 0% 0% 0%;
+            }
+        }
+
+        div.spacer {
+            height: 296.05px;
+            width: 100%;
+        }
+
+        p {
+            color: white;
+            font-size: 24px;
+            font-weight: 400;
+
+            span.lie {
+                color: #F3C331;
+                font-family: 'Lie To Me', sans-serif;
+                font-size: 34px;
+            }
+        }
+
+        div.button {
+            margin-top: 3rem;
+
+            button {
+                font-size: 1em;
+                font-weight: 600;
+                fill: #FFFFFF;
+                color: #FFFFFF;
+                background-color: #61CE7000;
+                border-style: solid;
+                border-width: 3px 3px 3px 3px;
+                border-color: #FB8B24;
+                border-radius: 36px 36px 36px 36px;
+                padding: 12.5312px 37.6094px;
+            }
+        }
+    }
 }

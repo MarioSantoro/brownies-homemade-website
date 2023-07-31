@@ -14,7 +14,9 @@ ul {
 }
 
 header {
-    position: relative;
+    position: absolute;
+    top: 0;
+    width: 100%;
     z-index: 3;
 
     a {
@@ -31,39 +33,39 @@ header {
 }
 
 main {
+    div.title {
+        color: white;
+
+        h1 {
+            color: #FFFFFFB8;
+            font-size: 55px;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        h2 {
+
+            font-family: 'Lie To Me', sans-serif;
+            text-align: center;
+            font-size: 48px;
+            font-weight: 300;
+            margin: -14% 0% 0% 0%;
+        }
+    }
+
     div.jumbotron {
         background-image: url('https://brashbrownie.com/wp-content/uploads/2023/04/cashew-chocolate-brownies-in-calicut.webp');
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
-        height: 1000px;
-        position: absolute;
-        top: 0;
+        height: 995px;
         width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
 
-        div.title {
-            color: white;
 
-            h1 {
-                color: #FFFFFFB8;
-                font-size: 55px;
-                font-weight: 700;
-                margin: 0;
-            }
-
-            h2 {
-
-                font-family: 'Lie To Me', sans-serif;
-                text-align: center;
-                font-size: 48px;
-                font-weight: 300;
-                margin: -14% 0% 0% 0%;
-            }
-        }
 
         div.spacer {
             height: 296.05px;
@@ -82,21 +84,68 @@ main {
             }
         }
 
-        div.button {
-            margin-top: 3rem;
 
-            button {
-                font-size: 1em;
-                font-weight: 600;
-                fill: #FFFFFF;
-                color: #FFFFFF;
-                background-color: #61CE7000;
-                border-style: solid;
-                border-width: 3px 3px 3px 3px;
-                border-color: #FB8B24;
-                border-radius: 36px 36px 36px 36px;
-                padding: 12.5312px 37.6094px;
+    }
+
+    div.button {
+        margin-top: 3rem;
+
+        button {
+            font-size: 1em;
+            font-weight: 600;
+            fill: #FFFFFF;
+            color: #FFFFFF;
+            background-color: #61CE7000;
+            border-style: solid;
+            border-width: 3px 3px 3px 3px;
+            border-color: #FB8B24;
+            border-radius: 36px 36px 36px 36px;
+            padding: 12.5312px 37.6094px;
+        }
+    }
+
+    div.about {
+        background-image: url('https://brashbrownie.com/wp-content/uploads/2023/04/fudge-brownies-in-calicut.webp');
+        height: 995px;
+
+        div.about-content {
+            margin-top: 9rem;
+            font-size: 18px;
+            padding: 0px 50px 0 82px;
+
+
+            p {
+                margin-bottom: 1.6rem;
+            }
+
+            span.lie {
+                color: #F3C331;
+                font-family: 'Lie To Me', sans-serif;
             }
         }
+
+        div.about-text {
+            padding: 29px 29px 0px;
+        }
+
+        h1 {
+            color: white;
+        }
+
+        h2 {
+            width: 200px;
+            margin: -3% 0% 0% 0%;
+        }
+
+        div.col-cs {
+            width: calc(100% / 2);
+        }
+
+        span.w {
+            color: white;
+            font-size: 34px;
+            font-weight: 700;
+        }
+
     }
 }

@@ -167,4 +167,54 @@
                 </div>
             </div>
     </section>
+    <section>
+        <div class="contact container">
+            <div class="title text-center mt-5">
+                <h1 class="text-uppercase">Contact</h1>
+                <h2>Us</h2>
+            </div>
+            <div class="row my-5">
+                <div class="col-4 text-center">
+                    <div class="content">
+                        <i class="fa-solid fa-envelope mb-3"></i>
+                        <p>brashbrownie@gmail.com</p>
+                    </div>
+                </div>
+                <div class="col-4 text-center">
+                    <div class="content">
+                        <i class="fa-solid fa-square-phone mb-3"></i>
+                        <p>+91 8089641013</p>
+                    </div>
+                </div>
+                <div class="col-4 text-center">
+                    <div class="content">
+                        <i class="fa-solid fa-location-dot mb-3"></i>
+                        <p>Ariyallur, Malappuram
+                            Kerala-676312</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-center justify-content-between">
+                <div class="col-cs text-center">
+                    <input type="text" placeholder="Name" required>
+                </div>
+                <div class="col-cs text-center">
+                    <input type="email" placeholder="Email" required>
+                </div>
+                <div class="col-cs text-center">
+                    <input type="text" placeholder="Phone" required>
+                </div>
+                <div class="col-12">
+                    <textarea cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required mt-5"
+                        aria-required="true" aria-invalid="false" placeholder="Your message" name="textarea-439"></textarea>
+                </div>
+                <div class="col-12 d-flex justify-content-between align-items-center mt-2">
+                    <div class="button mt-2">
+                        <button class="btn-cs">Send now</button>
+                    </div>
+                    <p class="text-white m-0">We look forward to converting your ideas into our dreams</p>
+                </div>
+            </div>
+        </div>
+    </section>
 @endsection

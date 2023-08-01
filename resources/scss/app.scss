@@ -247,5 +247,70 @@ main {
         }
     }
 
+    div.contact {
+        h1 {
+            color: white;
+            font-size: 45px;
+        }
+
+        h2 {
+            margin: -2% 0% 0% 0%;
+            color: #F3C331;
+        }
+
+        div.content {
+            color: white;
+
+            i {
+                font-size: 40px;
+                color: #636363;
+            }
+
+            p {
+                font-size: 16px;
+            }
+        }
+
+        div.col-cs {
+            width: calc(100% / 3 - 10px);
+
+            input {
+                width: 100%;
+                padding: 12px;
+                border: 1px solid white;
+                border-radius: 1rem;
+                background-color: transparent;
+                transition: all .5s ease;
+            }
+
+            input:focus {
+                outline: none;
+                background-color: white;
+            }
+        }
+
+        textarea.wpcf7-form-control {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid white;
+            border-radius: 1rem;
+            background-color: transparent;
+            transition: all .5s ease;
+        }
+
+
+        textarea:focus {
+            outline: none;
+            background-color: white;
+        }
+
+        ::placeholder {
+            /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: lightgray;
+            opacity: 1;
+            /* Firefox */
+        }
+
+    }
 
 }

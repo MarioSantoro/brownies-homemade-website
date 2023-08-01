@@ -1,6 +1,5 @@
 @extends('layout.app')
 
-
 @section('main-content')
     <section>
         <div class="jumbotron">
@@ -218,3 +217,4 @@
         </div>
     </section>
 @endsection
+@vite('resources/js/app.js')

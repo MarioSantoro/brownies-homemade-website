@@ -1,0 +1,73 @@
+@import "~bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/lie-to-me');
+
+body {
+    background-color: #221E1D;
+    font-family: 'Montserrat', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+
+    a {
+        padding: 0 32px;
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+    }
+
+    img {
+        padding: 16px 0;
+        max-width: 130px;
+    }
+}
+
+main {
+    div.jumbotron {
+        background-image: url('https://brashbrownie.com/wp-content/uploads/2023/04/fudge-brownies-making-in-calicut.webp');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 995px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+
+
+        div.spacer {
+            height: 296.05px;
+            width: 100%;
+        }
+
+        p {
+            color: white;
+            font-size: 24px;
+            font-weight: 400;
+
+            span.lie {
+                color: #F3C331;
+                font-family: 'Lie To Me', sans-serif;
+                font-size: 34px;
+            }
+        }
+
+
+    }
+}
+
+footer {
+    padding: 2rem;
+}

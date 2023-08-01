@@ -19,6 +19,11 @@ class GuestController extends Controller
         return view('guest.guestHome', compact('newBrownie'));
     }
 
+    public function about()
+    {
+        return view('guest.aboutUs');
+    }
+
     /**
      * Show the form for creating a new resource.
      *

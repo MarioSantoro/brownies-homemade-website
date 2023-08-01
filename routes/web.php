@@ -15,3 +15,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [GuestController::class, 'index'])->name('guest.home');
+Route::get('/about-us', [GuestController::class, 'about'])->name('guest.about');

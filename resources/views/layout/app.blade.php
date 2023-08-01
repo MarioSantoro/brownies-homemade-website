@@ -16,6 +16,7 @@
     @include('partials.footer')
 
     @vite('resources/js/app.js')
+    @yield('script-custom')
 </body>
 
 </html>

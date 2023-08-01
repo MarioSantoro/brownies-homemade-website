@@ -51,4 +51,120 @@
             <div class="col-cs wrapper"></div>
         </div>
     </section>
+    <section>
+        <div class="bestsellers container-cs">
+            <div class="row mt-5">
+                <div class="col-12">
+                    <div class="title text-center">
+                        <h1 class="text-uppercase">Our</h1>
+                        <h2>Bestsellers</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5 justify-content-between align-items-center">
+                @foreach ($newBrownie as $brownie)
+                    <div class="col-cs ">
+                        <div class="card-cs d-flex flex-column justify-content-center align-items-center">
+                            <div class="header-card">
+                                <img src="{{ $brownie->thumb }}" alt="">
+                            </div>
+                            <div class="type">
+                                <h2>{{ $brownie->type }}</h2>
+                            </div>
+                            <div class="description text-center text-white mt-3">
+                                <p>{{ $brownie->description }}</p>
+                            </div>
+                            <div class="button mt-2">
+                                <button class="btn-cs">Shop Now</button>
+                            </div>
+                        </div>
+                    </div>
+                @endforeach
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="questions">
+            <div class="questions container-cs">
+                <div class="row mt-5">
+                    <div class="col-12">
+                        <div class="title text-center">
+                            <h1 class="text-uppercase">Frequently Asked</h1>
+                            <h2>Questions</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-content mt-5">
+                <div class="container-accordion">
+                    <div class="accordion" id="accordionPanelsStayOpenExample">
+                        <div class="accordion-item mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                                    aria-controls="panelsStayOpen-collapseOne">
+                                    What flavors of brownies do you offer?​
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                                <div class="accordion-body">
+                                    We have a wide range of flavors to choose from, including classic chocolate brownies,
+                                    salted caramel, peanut butter, cookies and cream, mint chocolate, and more. Check out
+                                    our menu for the complete list of flavors.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                                    aria-controls="panelsStayOpen-collapseTwo">
+                                    How should I store the brownies?
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    Our brownies are best stored in an airtight container at room temperature. They will
+                                    stay fresh for up to five days. If you’d like to extend their shelf life, you can
+                                    refrigerate them for up to two weeks or freeze them for up to three months.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                                    aria-controls="panelsStayOpen-collapseThree">
+                                    Can I customize my brownie order?
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    Absolutely! We offer customization options for our chocolate brownies. Whether you’d
+                                    like to add toppings, include a personalized message, or have specific dietary
+                                    requirements, we’ll do our best to accommodate your requests. Just let us know your
+                                    preferences when placing the order.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
+                                    aria-controls="panelsStayOpen-collapseFour">
+                                    How far in advance should I place my order?
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    We recommend placing your order at least 48 hours in advance to ensure availability.
+                                    However, during busy periods, such as holidays or special events, it’s best to book your
+                                    brownies as early as possible to secure your desired date and time.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
 @endsection

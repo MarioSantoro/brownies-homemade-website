@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Guest;
 
 use App\Http\Controllers\Controller;
+use App\Models\Brownie;
 use Illuminate\Http\Request;
 
 class GuestController extends Controller
@@ -14,7 +15,8 @@ class GuestController extends Controller
      */
     public function index()
     {
-        return view('guest.guestHome');
+        $newBrownie = Brownie::all();
+        return view('guest.guestHome', compact('newBrownie'));
     }
 
     /**

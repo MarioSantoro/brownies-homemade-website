@@ -74,9 +74,10 @@
                                 <p>{{ $brownie->description }}</p>
                             </div>
                             <div class="button mt-2">
-                                <button class="btn-cs"> <a class="text-decoration-none text-white"
-                                        href="{{ route('guest.show', $brownie->id) }}">Shop
-                                        Now</a></button>
+                                <a
+                                    class="btn-cs text-decoration-none text-white"href="{{ route('guest.show', $brownie->id) }}">Shop
+                                    Now
+                                </a>
                             </div>
                         </div>
                     </div>

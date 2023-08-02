@@ -33,8 +33,39 @@ header {
 }
 
 main {
-    div.jumbotron {
+
+    div.title {
+        color: white;
+
+        h1 {
+            font-size: 45px;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        h2 {
+            color: #F3C331;
+            font-family: 'Lie To Me', sans-serif;
+            text-align: center;
+            font-size: 48px;
+            font-weight: 300;
+            margin: -14% 0% 0% 0%;
+        }
+    }
+
+    div.jumbotron.first {
         background-image: url('https://brashbrownie.com/wp-content/uploads/2023/04/fudge-brownies-making-in-calicut.webp');
+    }
+
+    div.jumbotron.second {
+        background-image: url('https://brashbrownie.com/wp-content/uploads/2023/04/chocolate-brownies-in-calicut.webp');
+
+        div.column.second {
+            padding-right: 6rem;
+        }
+    }
+
+    div.jumbotron {
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -54,7 +85,7 @@ main {
 
         p {
             color: white;
-            font-size: 24px;
+            font-size: 18px;
             font-weight: 400;
 
             span.lie {
@@ -64,7 +95,28 @@ main {
             }
         }
 
+        div.content {
+            div.column {
+                width: 50%;
 
+                span.change {
+                    font-size: 34px;
+                    color: #F3C331;
+                    font-weight: 700;
+                }
+            }
+
+            div.column.first {
+                padding-left: 18rem;
+            }
+        }
+    }
+
+    div.logo {
+        height: 95px;
+        background-image: url('https://brashbrownie.com/wp-content/uploads/2023/04/brownies-in-calicut.svg');
+        background-size: cover;
+        background-position: center center;
     }
 }
 

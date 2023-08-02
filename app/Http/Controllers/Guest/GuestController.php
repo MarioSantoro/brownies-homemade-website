@@ -53,7 +53,8 @@ class GuestController extends Controller
      */
     public function show($id)
     {
-        //
+        $newBrownie = Brownie::findOrFail($id);
+        return view('guest.showBrownie', compact('newBrownie'));
     }
 
     /**
